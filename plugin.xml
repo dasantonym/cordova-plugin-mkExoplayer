@@ -24,9 +24,6 @@
 		<framework src="androidx.annotation:annotation:1.1.0"/>
 		<framework src="androidx.appcompat:appcompat:1.1.0"/>
 		<framework src="com.google.android.material:material:1.0.0"/>
-		<edit-config file="AndroidManifest.xml" mode="merge" target="application">
-			  <application android:usesCleartextTraffic="true" />
-		 </edit-config>
 		<config-file target="res/xml/config.xml" parent="/*">
             <feature name="mkExoPlayer">
                 <param name="android-package" value="com.mkalyon.cordova.plugins.mkEXO.Plugin"/>
