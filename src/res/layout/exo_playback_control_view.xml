@@ -8,6 +8,14 @@
     android:layoutDirection="ltr"
     android:orientation="vertical">
 
+    <ImageButton
+        android:id="@+id/exo_close"
+        style="@style/Exo.Close"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:background="@layout/exo_rounded_corners"
+        android:layout_gravity="top|right"/>
+
     <!-- Control button bar -->
     <LinearLayout
         android:id="@id/exo_buttons"

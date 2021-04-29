@@ -49,6 +49,10 @@
     <style name="Exo.Pause">
         <item name="android:src">@drawable/pause</item>
     </style>
+
+    <style name="Exo.Close">
+        <item name="android:src">@drawable/close</item>
+    </style>
 	<style name="TrackSelectionDialogThemeOverlay" parent="ThemeOverlay.AppCompat.Dialog.Alert">
     <item name="windowNoTitle">false</item>
 	</style>

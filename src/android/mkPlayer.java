@@ -44,6 +44,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
+import android.widget.ImageButton;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.DefaultLoadControl;
 import com.google.android.exoplayer2.ExoPlaybackException;
@@ -399,6 +400,14 @@ public class mkPlayer{
         FrameLayout mainLayout = LayoutProvider.getMainLayout(this.activity);
         exoView = LayoutProvider.getExoPlayerView(this.activity, config);
         exoView.setControllerVisibilityListener(playbackControlVisibilityListener);
+
+        ImageButton closeButton = (ImageButton) findView(exoView, activity, "exo_close");
+        closeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                close();
+            }
+        });
 
         mainLayout.addView(exoView);
         dialog.setContentView(mainLayout);
