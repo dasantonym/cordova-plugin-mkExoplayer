@@ -645,7 +645,9 @@ public class mkPlayer{
 
     public void stop() {
         paused = false;
-        exoPlayer.stop();
+        if (null != exoPlayer) {
+            exoPlayer.stop();
+        }
     }
 
     private long normalizeOffset(long newTime) {
